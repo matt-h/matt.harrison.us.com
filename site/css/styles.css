@@ -3,24 +3,25 @@
 	padding:0;
 }
 body {
-	background:#FFF;
-	color:#000;
+	background:#111;
+	color:#FFF;
 	font-size:1em;
 }
 a {
-	color:#000;
+	color:#CCC;
 	text-decoration:none;
 }
 a:hover {
 	text-decoration:underline;
 }
 code {
-	background:#EEE;
+	background:#333;
 }
 pre {
 	display:block;
 	white-space:pre;
-	background:#EEE;
+	background:#333;
+	color:#FFF;
 	border:0.1em solid #DDD;
 	padding:0.3em;
 	margin:0.3em;
@@ -31,24 +32,24 @@ pre {
 	display:none;
 }
 #header {
-	background:#22F;
+	background:#001994;
 	/* IE10 Consumer Preview */
-	background-image: -ms-linear-gradient(top, #032DFF 0%, #00A3EF 100%);
+	background-image: -ms-linear-gradient(top, #001994 0%, #005C87 100%);
 
 	/* Mozilla Firefox */
-	background-image: -moz-linear-gradient(top, #032DFF 0%, #00A3EF 100%);
+	background-image: -moz-linear-gradient(top, #001994 0%, #005C87 100%);
 
 	/* Opera */
-	background-image: -o-linear-gradient(top, #032DFF 0%, #00A3EF 100%);
+	background-image: -o-linear-gradient(top, #001994 0%, #005C87 100%);
 
 	/* Webkit (Safari/Chrome 10) */
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #032DFF), color-stop(1, #00A3EF));
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #005C87), color-stop(1, #001994));
 
 	/* Webkit (Chrome 11+) */
-	background-image: -webkit-linear-gradient(top, #032DFF 0%, #00A3EF 100%);
+	background-image: -webkit-linear-gradient(top, #001994 0%, #005C87 100%);
 
 	/* W3C Markup, IE10 Release Preview */
-	background-image: linear-gradient(to bottom, #032DFF 0%, #00A3EF 100%);
+	background-image: linear-gradient(to bottom, #001994 0%, #005C87 100%);
 }
 #site-title {
 	color:#FFF;
@@ -67,7 +68,7 @@ pre {
 	clear:both;
 }
 #menu {
-	background:#339;
+	background:#131363;
 }
 #menu li {
 	padding:0 1em;
@@ -88,17 +89,17 @@ pre {
 	margin-left:1em;
 }
 .entry-meta {
-	color:#333;
+	color:#AAA;
 	font-size:0.7em;
 	padding:0.3em;
 	margin:0.3em;
 }
 footer.entry-meta {
-	background:#CCC;
-	border:0.1em solid #BBB;
+	background:#222;
+	border:0.1em solid #000;
 }
 .entry-meta a {
-	color:#222;
+	color:#BBB;
 }
 
 #content header h1 {
