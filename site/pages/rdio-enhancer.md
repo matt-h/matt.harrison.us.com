@@ -18,16 +18,101 @@ Current Features
 * Collection
 	* Add Tags to Albums (tags are stored in local storage)
 	* Filter Collection by tags
+	* Export to CSV
 * Playlist Additions
 	* Sort Playlist
-		* Sort by Artist, Album, Song Name, or Randomize
+		* Sort by Artist, Album, Song Name, Release Date, Play Count, Reverse, or Randomize
 	* Remove Duplicates
+	* Export to CSV
 	* Fork Playlist
 	* Add playlists to other playlists
 
 
 Changelog
 ================
+
+v 2.8.2
+
+* Fixes
+
+	* Fix add playlist to other playlists so it works again
+
+v 2.8.1
+
+* Fixes
+
+	* Fix more menu on albums
+
+v 2.8
+
+* Fixes
+
+	* Fix the menu items not showing up after Rdio update
+
+* New
+
+	* Sort Playlist by Play Count
+
+v 2.7.5
+
+* Fixes
+
+	* Sorting by Artist ignores the "The" and "A" at the beginning of the name - [Marc Shilling](https://github.com/marcshilling)
+	* Fix forking and adding a playlist to a playlist to make sure all tracks are loaded first
+
+v 2.7.4
+
+* Fixes
+
+	* Re-Add playlist controls to new playlist menus
+
+v 2.7.3
+
+* Fixes
+
+	* Fixed chrome notification if you were using them
+
+v 2.7.2
+
+* Fixes
+
+	* Fixed randomize playlist
+
+v 2.7.1
+
+* New
+
+	* Export to CSV for Collection - [JaderDias](https://github.com/JaderDias)
+
+v 2.7
+
+* Fixes
+
+	* Fix playlist sorting to handle Rdio lazy load of playlists (this made sorting unloaded playlists slow)
+* New
+
+	* Export to CSV - [JaderDias](https://github.com/JaderDias)
+
+v 2.6.1
+
+* Fixes
+
+	* Allow extension to work on https - [Sean Smith](https://github.com/seans23)
+
+v 2.6
+
+* New
+
+	* Add Sort by Release Date - [Sean Smith](https://github.com/seans23)
+	* Add reverse sorting - [Sean Smith](https://github.com/seans23)
+	* Only show sort options on Playlists you have permission to edit - [Sean Smith](https://github.com/seans23)
+
+v 2.5.3
+
+* Fixes
+
+	* Fix options menu due to Rdio update
+
 v 2.5.2
 
 * New
