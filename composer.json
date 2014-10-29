@@ -1,8 +1,8 @@
 {
 	"require": {
-		"smarty/smarty": "v3.1.18",
+		"smarty/smarty": "v3.1.21",
 		"mrclay/minify": "2.2.*",
 		"michelf/php-markdown": "1.4.*",
-		"symfony/yaml": "v2.4.7"
+		"symfony/yaml": "v2.5.6"
 	}
 }
