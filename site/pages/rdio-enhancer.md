@@ -12,13 +12,21 @@ Get Rdio Enhancer
   * [Report an issue](https://github.com/matt-h/rdio-enhancer/issues "Report an issue on Github")
 
 
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+
 Current Features
 ================
 
 * Collection
-	* Add Tags to Albums (tags are stored in local storage)
-	* Filter Collection by tags
 	* Export to CSV
+	* View Unavailable Albums
 * Playlist Additions
 	* Sort Playlist
 		* Sort by Artist, Album, Song Name, Release Date, Play Count, Reverse, or Randomize
@@ -30,6 +38,53 @@ Current Features
 
 Changelog
 ================
+
+
+v 2.10.2
+
+* Fixes
+
+	* Fix string issue in escaping quotes
+
+v 2.10.1
+
+* Fixes
+
+	* Escape quotes in csv export [#65](https://github.com/matt-h/rdio-enhancer/issues/65)
+	* Fix export of larger than 30000 songs [#66](https://github.com/matt-h/rdio-enhancer/issues/66)
+
+v 2.10
+
+* New
+
+	* Show Has Listened in Albums/Stations [Ryan Nauman](https://github.com/ryan-nauman) [#61](https://github.com/matt-h/rdio-enhancer/pull/61)
+	* Add artist top tracks to playlist feature [Ryan Nauman](https://github.com/ryan-nauman) [#62](https://github.com/matt-h/rdio-enhancer/pull/62)
+	* Scroll to hightlighted track on shared link [Ryan Nauman](https://github.com/ryan-nauman) [#63](https://github.com/matt-h/rdio-enhancer/pull/63)
+
+v 2.9
+
+* New
+
+	* Unavailable Albums on Favorites - [nikrowell](https://github.com/nikrowell) [#53](https://github.com/matt-h/rdio-enhancer/pull/53)
+
+v 2.8.5
+
+* Fixes
+
+	* update getTracksInCollection API call to handle large collections over 15000+ tracks
+
+v 2.8.4
+
+* Fixes
+
+	* Handle edge case in which source has no attributes. Thanks @seans23
+	* update getTracksInCollection API call to only get 1000 tracks at a time to prevent server errors with large libraries
+
+v 2.8.3
+
+* Fixes
+
+	* Fix Export Favorites to CSV
 
 v 2.8.2
 
