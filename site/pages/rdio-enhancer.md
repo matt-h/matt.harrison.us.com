@@ -22,6 +22,8 @@ Donate
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
 
+Bitcoin: 1G4AvP1vq6M2Ymf922vP7SM5Ge1Qg1L95t
+
 
 Current Features
 ================
