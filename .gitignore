@@ -1,5 +1,3 @@
-vendor
-composer.lock
-output
-templates_c
-deploydir
+output/
+deploydir/
+public/
