@@ -1,0 +1,11 @@
+contentdir    = "content"
+layoutdir     = "layouts"
+publishdir    = "public"
+baseurl       = "https://matt.harrison.us.com/"
+title         = "Matt"
+canonifyurls  = true
+theme         = "Lanyon"
+uglyurls      = true
+
+[indexes]
+  category  = "categories"
