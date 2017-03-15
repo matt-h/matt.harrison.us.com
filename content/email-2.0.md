@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Email 2.0 - Improvements to the email spec to make more reliable and secure.
 h1: Email 2.0
 description: Improvements to the email spec to make more reliable and secure.

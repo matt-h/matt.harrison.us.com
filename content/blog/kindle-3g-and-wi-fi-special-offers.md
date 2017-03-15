@@ -1,9 +1,10 @@
 ---
-layout: post
 title: Kindle 3G and Wi-Fi with Special Offers
 h1: Kindle 3G and Wi-Fi with Special Offers
 date: 2011-07-19 20:30:10
-categories: Books,Gadgets
+categories:
+  - Books
+  - Gadgets
 description: I got a Kindle this past Thursday. I am loving it so far. The E-Ink screen is easy to read and works great with a lot of light.
 ---
 I got a <a href="http://www.amazon.com/Kindle-Keyboard-Free-Wi-Fi-Display/dp/B004HZYA6E?SubscriptionId=06ECB9YB6KKGMF4SMXG2&tag=dblock-20" target="_blank" rel="nofollow" title="Kindle Keyboard">Kindle</a> this past Thursday. I am loving it so far. The E-Ink screen is easy to read and works great with a lot of light. I'm not sure what it is about it, but seem to be able to read faster than with it than reading a book on paper.

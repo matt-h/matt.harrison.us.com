@@ -1,9 +1,10 @@
 ---
-layout: post
 title: A wireless wired network
 h1: A wireless wired network
 date: 2011-07-22 12:48:00
-categories: Gadgets,Networking
+categories:
+  - Gadgets
+  - Networking
 description: My company is moving to a new office in about a month that won't have wire drops in the walls for the workstations.
 ---
 My company is moving to a new office in about a month that won't have wire drops in the walls for the workstations. The office currently has a wireless network, although almost all of the machines use a wired connection.

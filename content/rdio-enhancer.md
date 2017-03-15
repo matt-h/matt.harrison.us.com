@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Rdio Enhancer - Adds some enhancements to rdio.
 h1: Rdio Enhancer
 description: Enhances rdio.com with many of the most requested Feature Requests for rdio. View details for full list.
@@ -353,4 +352,3 @@ Nicolas [@cotenoni](https://twitter.com/cotenoni) [GitHub](https://github.com/co
 
   * Great music listening service.
   * Please subscribe to rdio if you use this!
-

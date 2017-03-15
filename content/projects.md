@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Projects
 h1: Projects
 description: Projects created by me

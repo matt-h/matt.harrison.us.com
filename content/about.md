@@ -1,5 +1,4 @@
 ---
-layout: page
 title: About
 h1: About
 description: I am a web developer, linux geek and general coder. This will be a collection of my code and thoughts.

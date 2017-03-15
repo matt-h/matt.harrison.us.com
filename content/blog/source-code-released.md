@@ -1,9 +1,10 @@
 ---
-layout: post
 title: Source Code Released
 h1: This site's source code is now released
 date: 2014-05-08 13:43:00
-categories: Open Source,Websites
+categories:
+  - Open Source
+  - Websites
 description: I have now open sourced the build system behind this website
 ---
 This site has always used some build scripts to generate it in various formats. This has changed over the years but I have tried to keep it simple.

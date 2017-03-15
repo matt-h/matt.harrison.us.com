@@ -1,5 +1,4 @@
 ---
-layout: page
 title: License
 h1: License
 description: All content is Copyright Matt Harrison.
