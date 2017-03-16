@@ -7,7 +7,7 @@
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/styles.css?{{ slicestr (readFile "static/css/styles.css" | md5) 0 10 }}">
-<meta name="description" content="{$description}">
+<meta name="description" content="{{ .Description }}">
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
