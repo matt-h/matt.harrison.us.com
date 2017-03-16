@@ -1,0 +1,9 @@
+<article class="li">
+   <a href="{{ .Permalink }}">
+      <div class="detail">
+         <time>{{ $.Date.Format "Mon, Jan 2, 2006" }}</time>
+         <h2 class="title">{{ .Title }}</h2>
+         <div class="summary">{{ .Summary }}</div>
+      </div>
+   </a>
+</article>
