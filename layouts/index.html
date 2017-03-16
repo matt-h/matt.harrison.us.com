@@ -1,5 +1,4 @@
-{extends file="template.tpl"}
-{block name="content"}
+{{ partial "header.html" . }}
 <article>
 	<header>
 		<h1><a href="{$url}" title="{$date}" rel="bookmark">{$h1}</a></h1>
@@ -17,4 +16,4 @@
 	This entry was posted in {$categories}. Bookmark the <a href="{$url}" title="Permalink to {$h1}" rel="bookmark">permalink</a>.
 	</footer>
 </article>
-{/block}
+{{ partial "footer.html" . }}

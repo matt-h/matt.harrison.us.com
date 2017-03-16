@@ -1,0 +1,19 @@
+{{ partial "header.html" . }}
+<article>
+	<header>
+		<h1>{{ .Params.h1 }}</h1>
+
+		<div class="entry-meta">
+		<span class="sep">Posted on </span><a href="" title="{{ .Date.Format "January 2, 2006" }}" rel="bookmark"><time datetime="{{ .Date.Format "January 2, 2006" }} ">{{ .Date.Format "January 2, 2006" }} </time></a>
+		</div>
+	</header>
+
+	<div class="entry-content">
+		{{ .Content }}
+	</div>
+
+	<footer class="entry-meta">
+	This entry was posted in {$categories}. Bookmark the <a href="" title="Permalink to {{ .Params.h1 }}" rel="bookmark">permalink</a>.
+	</footer>
+</article>
+{{ partial "footer.html" . }}
