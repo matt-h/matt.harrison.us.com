@@ -1,4 +1,6 @@
 {{ partial "header.html" . }}
+
+<h1>Blog</h1>
 <div class="articles">
 	{{ range first 10 (where .Data.Pages "Section" "blog") }}
 		{{ .Render "summary" }}
