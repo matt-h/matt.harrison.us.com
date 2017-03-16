@@ -14,7 +14,11 @@
 	</div>
 
 	<footer class="entry-meta">
-	This entry was posted in. Bookmark the <a href="{{ .Permalink }}" title="Permalink to {{ .Params.h1 }}" rel="bookmark">permalink</a>.
+	This entry was posted in
+	{{ range .Params.categories }}
+		<a href="{{ $baseURL }}categories/{{ . | urlize }}.html">{{ . }}</a>
+	{{ end }}
+	. Bookmark the <a href="{{ .Permalink }}" title="Permalink to {{ .Params.h1 }}" rel="bookmark">permalink</a>.
 	</footer>
 </article>
 {{ partial "pagination.html" . }}
