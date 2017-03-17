@@ -1,8 +1,6 @@
 matth.co
 ========
 
-[![Dependency Status](https://gemnasium.com/matt-h/matth.co.svg)](https://gemnasium.com/matt-h/matth.co)
-
 This is the source code that is used to generate http://matth.co
 
 This is built similarly to jekyll but developed in PHP. It started out differently but has evolved over time to take some ideas from jekyll that I liked.
