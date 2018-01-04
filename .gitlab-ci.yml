@@ -1,12 +1,5 @@
-image: alpine:3.7
-
-before_script:
-  - apk update && apk add openssl
-  - sha256sum --version
-  - wget https://github.com/gohugoio/hugo/releases/download/v0.32.2/hugo_0.32.2_Linux-64bit.tar.gz
-  - echo "83e40dd976371f41acfe611051e965600a9143faceb74c8c0e0621fa37aa004c hugo_0.32.2_Linux-64bit.tar.gz" | sha256sum -c
-  - tar xf hugo_0.32.2_Linux-64bit.tar.gz --strip-components=1 && mv hugo_0.32.2_linux_amd64 hugo && cp ./hugo /usr/bin
-  - hugo version
+# All available Hugo versions are listed here: https://gitlab.com/pages/hugo/container_registry
+image: registry.gitlab.com/pages/hugo:latest
 
 test:
   script:
