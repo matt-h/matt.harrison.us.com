@@ -5,7 +5,7 @@ description: All content is Copyright Matt Harrison.
 ---
 All content is Copyright Matt Harrison and is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/ "Creative Commons Attribution 4.0 International License").
 
-Any code snippets are Copyright © 2017 Matt Harrison (matt@harrison.us.com) and licensed under the [MIT license](http://www.opensource.org/licenses/mit-license.php "MIT license") unless otherwise stated on the page or code itself.
+Any code snippets are Copyright © 2018 Matt Harrison (matt@harrison.us.com) and licensed under the [MIT license](http://www.opensource.org/licenses/mit-license.php "MIT license") unless otherwise stated on the page or code itself.
 
 <pre>Copyright (c) Matt Harrison (matt@harrison.us.com)
 
