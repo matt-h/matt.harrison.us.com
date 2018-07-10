@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/matthewharrison
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://matt.harrison.us.com
+  * I am matthewharrison (https://keybase.io/matthewharrison) on keybase.
+  * I have a public key ASDVUc-3c7v2HItJPzptgvAuIJ2mGNSG95tqpQQvWPMcKgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120d551cfb773bbf61c8b493f3a6d82f02e209da618d486f79b6aa5042f58f31c2a0a",
+      "host": "keybase.io",
+      "kid": "0120d551cfb773bbf61c8b493f3a6d82f02e209da618d486f79b6aa5042f58f31c2a0a",
+      "uid": "a74679f6e789082324d23833eafe4019",
+      "username": "matthewharrison"
+    },
+    "merkle_root": {
+      "ctime": 1531228535,
+      "hash": "edafcf7053dc41a965c44a8363c76deaca4b40ed30b573792e76f9890ccc655dcddccde8139fcf346385472f86309f04bb62e878d70aa8581c64590263a903c9",
+      "hash_meta": "dee1f1e8fcfecb74b4da2b17bae3ba7b5fbfc11d62e593d541cbbfeb972baec9",
+      "seqno": 3225168
+    },
+    "service": {
+      "entropy": "Q0xI86C0C0uz6PA1/IWC7ZpK",
+      "hostname": "matt.harrison.us.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.1.1"
+  },
+  "ctime": 1531228595,
+  "expire_in": 504576000,
+  "prev": "cab49052132ca78c6107ee38684588c8fd0356b92df1300c01ab56ae5263a35a",
+  "seqno": 7,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg1VHPt3O79hyLST86bYLwLiCdphjUhvebaqUEL1jzHCoKp3BheWxvYWTESpcCB8QgyrSQUhMsp4xhB+44aEWIyP0DVrkt8TAMAatWrlJjo1rEIP5ulCjE4rXFUrASmcap7aOWEovi4IIEryphaHkkxp57AgHCo3NpZ8RAp+D7MyfWUNzH5sLVeEUM6sz2FkQQN1llJtc0VQqcfep0HpgoU0ft209qsouVdo/++ungM2cvngmaQFh3zTMJBKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIPVZw+GphNTXxrIMf4uWX7zqwEqX6YnyM38pOa3quZIlo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/matthewharrison
+
+==================================================================
