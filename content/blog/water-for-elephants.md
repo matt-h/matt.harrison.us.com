@@ -1,7 +1,7 @@
 ---
 title: Water for Elephants by Sara Gruen
 h1: Water for Elephants
-date: 2011-08-07 15:55:26
+date: 2011-08-07T15:55:26-04:00
 categories:
   - Books
 description: Water for Elephants isn't a book I'd normally choose to read.

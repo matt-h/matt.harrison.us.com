@@ -1,7 +1,7 @@
 ---
 title: Mount sshfs with a script
 h1: Mount sshfs with a script
-date: 2011-08-09 16:24:02
+date: 2011-08-09T16:24:02-04:00
 categories:
   - Linux
 description: sshfs is great for mounting remote directories locally. If you want to mount a sshfs directory locally with a script, you need to be able to connect to it with a script.

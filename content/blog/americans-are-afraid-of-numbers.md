@@ -1,7 +1,7 @@
 ---
 title: Americans are Afraid of Numbers
 h1: Americans are Afraid of Numbers
-date: 2011-07-22 12:48:00
+date: 2011-07-22T12:48:00-04:00
 categories:
   - Videos
 description: Neil deGrasse Tyson gives a talk on America's Fear of Numbers at The Amazing Meeting 2011 in Las Vegas. Pretty funny.

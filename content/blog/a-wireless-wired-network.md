@@ -1,7 +1,7 @@
 ---
 title: A wireless wired network
 h1: A wireless wired network
-date: 2011-07-22 12:48:00
+date: 2011-07-22T12:48:00-04:00
 categories:
   - Gadgets
   - Networking

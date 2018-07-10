@@ -1,7 +1,7 @@
 ---
 title: Source Code Released
 h1: This site's source code is now released
-date: 2014-05-08 13:43:00
+date: 2014-05-08T13:43:00-05:00
 categories:
   - Open Source
   - Websites

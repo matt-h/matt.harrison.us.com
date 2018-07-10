@@ -1,7 +1,7 @@
 ---
 title: Edit sudoers with visudo and nano
 h1: Edit Sudoers
-date: 2011-07-19 22:16:42
+date: 2011-07-19T22:16:42-04:00
 categories:
   - Linux
 description: How to edit the sudoers file to manage sudo users with visudo. Edit sudoers with nano or use visudo with nano.

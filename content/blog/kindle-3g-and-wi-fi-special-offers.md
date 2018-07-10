@@ -1,7 +1,7 @@
 ---
 title: Kindle 3G and Wi-Fi with Special Offers
 h1: Kindle 3G and Wi-Fi with Special Offers
-date: 2011-07-19 20:30:10
+date: 2011-07-19T20:30:10-04:00
 categories:
   - Books
   - Gadgets

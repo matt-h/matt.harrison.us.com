@@ -1,7 +1,7 @@
 ---
 title: The Name of the Wind by Patrick Rothfuss
 h1: The Name of the Wind
-date: 2011-07-29 10:13:53
+date: 2011-07-29T10:13:53-04:00
 categories:
   - Books
 description: I just finished The Name of the Wind by Patrick Rothfuss. I had heard a lot of great thing about this book.
