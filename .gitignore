@@ -1,3 +1,4 @@
 output/
 deploydir/
 public/
+.hugo_build.lock
