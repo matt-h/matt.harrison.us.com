@@ -12,7 +12,7 @@ This script uses expect to allow you to mount any ssh location with username and
 
 * Note, skipping first time verification can be dangerous and could be a security risk, especially if this is run outside of a trusted environment. You may use this script at your own risk.
 
-<pre><code language="bash">
+```
 #!/usr/bin/expect -d
 set timeout -1
 set username user
@@ -53,4 +53,4 @@ expect {
 		exit
 	}
 }
-</code></pre>
+```
