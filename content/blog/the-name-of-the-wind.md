@@ -6,7 +6,7 @@ categories:
   - Books
 description: I just finished The Name of the Wind by Patrick Rothfuss. I had heard a lot of great thing about this book.
 ---
-I just finished <a href="http://www.amazon.com/The-Name-Wind-Kingkiller-Chronicles/dp/0756405890?SubscriptionId=06ECB9YB6KKGMF4SMXG2&tag=dblock-20"  target="_blank" rel="nofollow" title="The Name of the Wind by Patrick Rothfuss">The Name of the Wind</a> by Patrick Rothfuss. I had heard a lot of great thing about this book. I hadn't even heard of it until I heard the second book came out and everyone was talking about how excited they were to get it. Now that I'm done with this one, I really want to read the next book. That will be soon.
+I just finished **The Name of the Wind** by Patrick Rothfuss. I had heard a lot of great thing about this book. I hadn't even heard of it until I heard the second book came out and everyone was talking about how excited they were to get it. Now that I'm done with this one, I really want to read the next book. That will be soon.
 
 *Warning* This may be considered as spoilers.
 
