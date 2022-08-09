@@ -1,9 +1,0 @@
-languageCode = "en-us"
-baseurl = "https://matt.harrison.us.com/"
-title = "Matt"
-canonifyurls = true
-uglyurls = true
-MetaDataFormat = "yaml"
-
-[indexes]
-  category  = "categories"
