@@ -3,7 +3,7 @@ extends: _layouts.post
 section: content
 title: Source Code Released
 date: 2014-05-08T13:43:00-05:00
-categories: [open_source, websites]
+categories: [open-source, websites]
 description: I have now open sourced the build system behind this website
 ---
 This site has always used some build scripts to generate it in various formats. This has changed over the years but I have tried to keep it simple.
