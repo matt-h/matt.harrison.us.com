@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'baseUrl' => 'https://jigsaw-blog-template.tighten.co',
+    'baseUrl' => 'https://matt.harrison.us.com',
     'production' => true,
 ];
