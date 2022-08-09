@@ -1,18 +1,21 @@
 ---
+extends: _layouts.main
+section: body
 title: Rdio Enhancer - Adds some enhancements to rdio.
 h1: Rdio Enhancer
 description: Enhances rdio.com with many of the most requested Feature Requests for rdio. View details for full list.
 ---
-Get Rdio Enhancer
-================
+
+# Rdio Enhancer
+
+## Get Rdio Enhancer
 
   * [Chrome Webstore](https://chrome.google.com/webstore/detail/hmaalfaappddkggilhahaebfhdmmmngf "Download Rdio Enhancer from the Chrome Webstore")
   * [Github code](https://github.com/matt-h/rdio-enhancer "Get the Rdio Enhancer code from Github")
   * [Report an issue](https://github.com/matt-h/rdio-enhancer/issues "Report an issue on Github")
 
 
-Donate
-================
+## Donate
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
@@ -24,8 +27,7 @@ Donate
 Bitcoin: 1G4AvP1vq6M2Ymf922vP7SM5Ge1Qg1L95t
 
 
-Current Features
-================
+## Current Features
 
 * Collection
 	* Export to CSV
@@ -39,8 +41,7 @@ Current Features
 	* Add playlists to other playlists
 
 
-Changelog
-================
+## Changelog
 
 
 v 2.10.2
