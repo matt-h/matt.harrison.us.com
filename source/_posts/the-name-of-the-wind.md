@@ -1,9 +1,9 @@
 ---
+extends: _layouts.post
+section: content
 title: The Name of the Wind by Patrick Rothfuss
-h1: The Name of the Wind
 date: 2011-07-29T10:13:53-04:00
-categories:
-  - Books
+categories: [books]
 description: I just finished The Name of the Wind by Patrick Rothfuss. I had heard a lot of great thing about this book.
 ---
 I just finished **The Name of the Wind** by Patrick Rothfuss. I had heard a lot of great thing about this book. I hadn't even heard of it until I heard the second book came out and everyone was talking about how excited they were to get it. Now that I'm done with this one, I really want to read the next book. That will be soon.

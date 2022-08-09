@@ -1,9 +1,9 @@
 ---
+extends: _layouts.post
+section: content
 title: Edit sudoers with visudo and nano
-h1: Edit Sudoers
 date: 2011-07-19T22:16:42-04:00
-categories:
-  - Linux
+categories: [linux]
 description: How to edit the sudoers file to manage sudo users with visudo. Edit sudoers with nano or use visudo with nano.
 ---
 Editing sudoers file allows you to manage which users can use the [sudo](https://en.wikipedia.org/wiki/Sudo) command. You should never modify this file by hand, and syntax errors will make it so you can't use sudo and possibly not be able to edit the file again. To modify it you should use the command [visudo](https://en.wikipedia.org/wiki/Visudo). This opens the sudoers file in vi so you can edit it.
