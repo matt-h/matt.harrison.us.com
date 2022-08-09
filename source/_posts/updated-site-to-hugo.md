@@ -1,10 +1,9 @@
 ---
+extends: _layouts.post
+section: content
 date: 2017-03-16T16:58:20-04:00
 title: Updated Site to hugo
-h1: Updated Site to hugo
-categories:
-  - Open Source
-  - Websites
+categories: [open_source, websites]
 description: I have switched the generation of this site to hugo
 ---
 
