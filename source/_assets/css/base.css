@@ -94,6 +94,7 @@ hr {
 }
 
 li {
+    @apply ml-8;
     & ul,
     & ol {
         @apply ml-8;
