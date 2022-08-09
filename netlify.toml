@@ -4,5 +4,10 @@ publish = "build_production"
 
 [[redirects]]
   from = "/*.html"
-  to = "/:splat"
+  to = "/:splat/"
+  status = 301
+
+[[redirects]]
+  from = "/categories/*.html"
+  to = "/blog/categories/open-source/"
   status = 301
