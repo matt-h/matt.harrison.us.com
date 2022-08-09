@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
     </head>
 
-    <body class="flex flex-col justify-between min-h-screen font-sans leading-normal text-gray-800 bg-gray-100">
+    <body class="flex flex-col justify-between min-h-screen font-sans leading-normal text-gray-800 bg-gray-100 dark:text-gray-100 dark:bg-gray-900">
         <header class="flex items-center h-24 py-4 bg-white border-b shadow" role="banner">
             <div class="container flex items-center px-4 mx-auto max-w-8xl lg:px-8">
                 <div class="flex items-center">
