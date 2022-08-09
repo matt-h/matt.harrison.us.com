@@ -1,8 +1,11 @@
 ---
+extends: _layouts.main
+section: body
 title: Email 2.0 - Improvements to the email spec to make more reliable and secure.
-h1: Email 2.0
 description: Improvements to the email spec to make more reliable and secure.
 ---
+# Email 2.0
+
 Hashing out my idea for email 2.0 - This should be written into a proper document
 
 Example of sending mail

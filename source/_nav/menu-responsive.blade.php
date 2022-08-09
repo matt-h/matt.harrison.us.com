@@ -16,10 +16,17 @@
         </li>
         <li class="pl-4">
             <a
-                title="{{ $page->siteName }} Contact"
-                href="/contact"
-                class="block mt-0 mb-4 text-sm no-underline {{ $page->isActive('/contact') ? 'active text-blue-500' : 'text-gray-800 hover:text-blue-500' }}"
-            >Contact</a>
+                title="{{ $page->siteName }} License"
+                href="/license"
+                class="block mt-0 mb-4 text-sm no-underline {{ $page->isActive('/license') ? 'active text-blue-500' : 'text-gray-800 hover:text-blue-500' }}"
+            >License</a>
+        </li>
+        <li class="pl-4">
+            <a
+                title="{{ $page->siteName }} Projects"
+                href="/projects"
+                class="block mt-0 mb-4 text-sm no-underline {{ $page->isActive('/projects') ? 'active text-blue-500' : 'text-gray-800 hover:text-blue-500' }}"
+            >Projects</a>
         </li>
     </ul>
 </nav>
