@@ -1,4 +1,5 @@
-output/
-deploydir/
-public/
-.hugo_build.lock
+/build_*/
+/node_modules/
+/source/assets/build/
+/vendor/
+.DS_Store

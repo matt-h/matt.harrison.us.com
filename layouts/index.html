@@ -1,9 +1,0 @@
-{{ partial "header.html" . }}
-
-<section id="main">
-	<h1>Blog</h1>
-	{{ range first 10 (where .Data.Pages "Section" "blog") }}
-		{{ .Render "summary" }}
-	{{ end }}
-</section>
-{{ partial "footer.html" . }}
