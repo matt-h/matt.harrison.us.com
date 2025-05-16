@@ -1,6 +1,12 @@
 window.axios = require('axios');
-import Vue from 'vue';
-import Search from './components/Search.vue';
+import Alpine from "alpinejs";
+import Fuse from "fuse.js";
+
+window.Fuse = Fuse;
+window.Alpine = Alpine;
+
+Alpine.start();
+
 import hljs from 'highlight.js/lib/core';
 
 // Syntax highlighting
@@ -15,14 +21,6 @@ hljs.registerLanguage('scss', require('highlight.js/lib/languages/scss'));
 hljs.registerLanguage('yaml', require('highlight.js/lib/languages/yaml'));
 
 document.querySelectorAll('pre code').forEach((block) => {
-    hljs.highlightBlock(block);
+    hljs.highlightElement(block);
 });
-
-Vue.config.productionTip = false;
-
-new Vue({
-    components: {
-        Search,
-    },
-}).$mount('#vue-search');
 

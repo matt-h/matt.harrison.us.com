@@ -144,3 +144,5 @@ pre {
     @apply text-white;
     @apply bg-blue-400;
 }
+
+[x-cloak] { display: none !important; }
