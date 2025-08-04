@@ -17,7 +17,9 @@
         <link rel="icon" href="/favicon.ico">
         <link href="/blog/feed.atom" type="application/atom+xml" rel="alternate" title="{{ $page->siteName }} Atom Feed">
 
-        <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
+        @viteRefresh()
+        <link rel="stylesheet" href="{{ vite('source/_assets/css/main.css') }}">
+        <script defer type="module" src="{{ vite('source/_assets/js/main.js') }}"></script>
     </head>
 
     <body class="flex flex-col justify-between min-h-screen font-sans leading-normal text-gray-800 bg-gray-100 dark:text-gray-100 dark:bg-gray-900">
@@ -59,9 +61,6 @@
                 </li>
             </ul>
         </footer>
-
-        <script src="{{ mix('js/main.js', 'assets/build') }}"></script>
-
         @stack('scripts')
     </body>
 </html>
