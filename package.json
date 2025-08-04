@@ -1,9 +1,9 @@
 {
     "private": true,
     "scripts": {
-        "dev": "mix",
-        "watch": "mix watch",
-        "prod": "mix --production"
+        "dev": "vite",
+        "build": "vite build",
+        "prod": "vite build --mode production"
     },
     "devDependencies": {
         "@tighten/jigsaw-vite-plugin": "^1.0.1",
