@@ -25,7 +25,7 @@ code {
     @apply py-px;
     @apply text-sm;
     @apply bg-gray-300;
-    @apply rounded;
+    @apply rounded-sm;
 }
 
 code.hljs {
@@ -94,7 +94,6 @@ hr {
 }
 
 li {
-    @apply ml-8;
     & ul,
     & ol {
         @apply ml-8;
@@ -118,7 +117,7 @@ ul {
 p {
     @apply my-3;
 
-    @screen md {
+    @media (width >= theme(--breakpoint-md)) {
         @apply my-6;
     }
 }
@@ -129,8 +128,8 @@ pre {
     @apply text-base;
     @apply bg-gray-200;
     @apply leading-loose;
-    @apply rounded;
-    @apply shadow;
+    @apply rounded-sm;
+    @apply shadow-sm;
     @apply overflow-x-auto;
 
     & code {

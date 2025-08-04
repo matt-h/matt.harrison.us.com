@@ -1,0 +1,5 @@
+{
+    "type": "static",
+    "docroot": "build_dev",
+    "host": "matt-harrison.hdev.dev"
+}

@@ -19,7 +19,9 @@
 
         @viteRefresh()
         <link rel="stylesheet" href="{{ vite('source/_assets/css/main.css') }}">
+        <link rel="stylesheet" href="{{ vite('source/_assets/css/prism.css') }}">
         <script defer type="module" src="{{ vite('source/_assets/js/main.js') }}"></script>
+        <script defer type="module" src="{{ vite('source/_assets/js/prism.js') }}"></script>
     </head>
 
     <body class="flex flex-col justify-between min-h-screen font-sans leading-normal text-gray-800 bg-gray-100 dark:text-gray-100 dark:bg-gray-900">
