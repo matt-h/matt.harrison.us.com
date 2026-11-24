@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0705fe6d71a1be9e89c8d4624f315a11",
+    "content-hash": "6faa31328237bb70126a747980d97fc9",
     "packages": [
         {
             "name": "brick/math",
@@ -2658,29 +2658,36 @@
         },
         {
             "name": "samdark/sitemap",
-            "version": "2.5.0",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/samdark/sitemap.git",
-                "reference": "9f8e1d051e128f64f5efeeef5b0f5ff17eb3d27a"
+                "reference": "08c2a1ad8b60bf27221ec856ac4112d66eb62df0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/samdark/sitemap/zipball/9f8e1d051e128f64f5efeeef5b0f5ff17eb3d27a",
-                "reference": "9f8e1d051e128f64f5efeeef5b0f5ff17eb3d27a",
+                "url": "https://api.github.com/repos/samdark/sitemap/zipball/08c2a1ad8b60bf27221ec856ac4112d66eb62df0",
+                "reference": "08c2a1ad8b60bf27221ec856ac4112d66eb62df0",
                 "shasum": ""
             },
             "require": {
                 "ext-xmlwriter": "*",
-                "php": ">=5.3.0"
+                "php": ">=7.1"
             },
             "require-dev": {
-                "phpunit/phpunit": "^9.0"
+                "phpbench/phpbench": "~1.0.0",
+                "phpstan/phpstan": "^1.12.5",
+                "phpunit/phpunit": "^9.0",
+                "rector/rector": "^1.2.10"
+            },
+            "suggest": {
+                "ext-intl": "For encoding international domain names",
+                "ext-zlib": "For gzipped sitemaps"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "samdark\\sitemap\\": ""
+                    "samdark\\sitemap\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2713,7 +2720,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2026-04-09T21:03:43+00:00"
+            "time": "2026-07-20T13:47:03+00:00"
         },
         {
             "name": "spatie/backtrace",
