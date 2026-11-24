@@ -1,5 +1,6 @@
 {
     "type": "static",
     "docroot": "build_dev",
-    "host": "matt-harrison.hdev.dev"
+    "host": "matt-harrison.hdev.dev",
+    "php": "8.3"
 }
