@@ -1,49 +1,50 @@
 @extends('_layouts.main')
 
+@section('main-class', 'max-w-site')
+
 @section('body')
-    @foreach ($posts->where('featured', true) as $featuredPost)
-        <div class="w-full mb-6">
-            @if ($featuredPost->cover_image)
-                <img src="{{ $featuredPost->cover_image }}" alt="{{ $featuredPost->title }} cover image" class="mb-6">
-            @endif
+    <section
+        class="rounded-2xl border border-line bg-masthead px-6 py-12 text-center text-masthead-ink sm:px-12 sm:py-16"
+        aria-labelledby="home-title"
+    >
+        <span class="mx-auto mb-6 block h-0.5 w-11 bg-masthead-accent" aria-hidden="true"></span>
+        <h1 id="home-title" class="mx-auto max-w-3xl text-balance text-[clamp(2.85rem,5.25vw,4.85rem)] leading-none font-medium">
+            Notes on code and the web.
+        </h1>
+        <p class="mx-auto mt-6 max-w-[52ch] text-pretty text-[clamp(1rem,1.6vw,1.15rem)] text-masthead-muted">
+            I’m {{ $page->siteAuthor }}, a web developer and open-source enthusiast. This is where I write about what I’m building and learning.
+        </p>
+    </section>
 
-            <p class="text-gray-700 font-medium my-2">
-                {{ $featuredPost->getDate()->format('F j, Y') }}
-            </p>
+    @php
+        $featuredPosts = $posts->where('featured', true);
+        $recentPosts = $posts->where('featured', false)->take(6);
+    @endphp
 
-            <h2 class="text-3xl mt-0">
-                <a href="{{ $featuredPost->getUrl() }}" title="Read {{ $featuredPost->title }}" class="text-gray-900 font-extrabold">
-                    {{ $featuredPost->title }}
-                </a>
-            </h2>
+    @if ($featuredPosts->isNotEmpty())
+        <section class="mt-10 sm:mt-16" aria-labelledby="featured-title">
+            <h2 id="featured-title" class="border-b border-line pb-4">Featured posts</h2>
 
-            <p class="mt-0 mb-4">{!! $featuredPost->getExcerpt() !!}</p>
+            <div class="grid gap-x-8 nav:grid-cols-2 lg:gap-x-16">
+                @foreach ($featuredPosts as $post)
+                    @include('_components.post-preview-inline', ['headingLevel' => 3, 'showCover' => true, 'excerptLength' => 255])
+                @endforeach
+            </div>
+        </section>
+    @endif
 
-            <a href="{{ $featuredPost->getUrl() }}" title="Read - {{ $featuredPost->title }}" class="uppercase tracking-wide mb-4">
-                Read
+    <section class="mt-10 sm:mt-16" aria-labelledby="writing-title">
+        <div class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2.5 border-b border-line pb-4">
+            <h2 id="writing-title">Recent writing</h2>
+            <a href="/blog/" class="inline-flex gap-1.5 text-sm font-semibold text-accent underline-offset-4 hover:underline">
+                View archive <span aria-hidden="true">→</span>
             </a>
         </div>
 
-        @if (! $loop->last)
-            <hr class="border-b my-6">
-        @endif
-    @endforeach
-
-    @foreach ($posts->where('featured', false)->take(6)->chunk(2) as $row)
-        <div class="flex flex-col md:flex-row md:-mx-6">
-            @foreach ($row as $post)
-                <div class="w-full md:w-1/2 md:mx-6">
-                    @include('_components.post-preview-inline')
-                </div>
-
-                @if (! $loop->last)
-                    <hr class="block md:hidden w-full border-b mt-2 mb-6">
-                @endif
+        <div class="grid gap-x-8 nav:grid-cols-2 lg:gap-x-16">
+            @foreach ($recentPosts as $post)
+                @include('_components.post-preview-inline', ['headingLevel' => 3])
             @endforeach
         </div>
-
-        @if (! $loop->last)
-            <hr class="w-full border-b mt-2 mb-6">
-        @endif
-    @endforeach
+    </section>
 @stop

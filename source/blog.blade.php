@@ -7,43 +7,41 @@ pagination:
 ---
 @extends('_layouts.main')
 
-@section('body')
-    <h1>Blog</h1>
+@section('main-class', 'max-w-reading')
 
-    <hr class="border-b my-6">
+@section('body')
+    <div class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2.5 border-b border-line pb-4">
+        <h1>Blog</h1>
+        <a href="/blog/feed.atom" class="inline-flex gap-1.5 text-sm font-semibold text-accent underline-offset-4 hover:underline">
+            Atom feed <span aria-hidden="true">↗</span>
+        </a>
+    </div>
 
     @foreach ($pagination->items as $post)
         @include('_components.post-preview-inline')
-
-        @if ($post != $pagination->items->last())
-            <hr class="border-b my-6">
-        @endif
     @endforeach
 
     @if ($pagination->pages->count() > 1)
-        <nav class="flex text-base my-8">
+        @php
+            $pageLinkClasses = 'grid size-11 place-items-center rounded-md border border-line font-semibold text-accent hover:border-accent';
+        @endphp
+
+        <nav class="mt-7 flex flex-wrap gap-2" aria-label="Blog pages">
             @if ($previous = $pagination->previous)
-                <a
-                    href="{{ $previous }}"
-                    title="Previous Page"
-                    class="bg-gray-200 hover:bg-gray-400 rounded mr-3 px-5 py-3"
-                >&LeftArrow;</a>
+                <a class="{{ $pageLinkClasses }}" href="{{ $previous }}" rel="prev" aria-label="Previous page">←</a>
             @endif
 
             @foreach ($pagination->pages as $pageNumber => $path)
                 <a
+                    class="{{ $pageLinkClasses }} aria-[current=page]:border-accent aria-[current=page]:bg-accent aria-[current=page]:text-paper"
                     href="{{ $path }}"
-                    title="Go to Page {{ $pageNumber }}"
-                    class="bg-gray-200 hover:bg-gray-400 rounded mr-3 px-5 py-3 {{ $pagination->currentPage == $pageNumber ? 'text-blue-600' : 'text-blue-700' }}"
+                    aria-label="Page {{ $pageNumber }}"
+                    @if ($pagination->currentPage == $pageNumber) aria-current="page" @endif
                 >{{ $pageNumber }}</a>
             @endforeach
 
             @if ($next = $pagination->next)
-                <a
-                    href="{{ $next }}"
-                    title="Next Page"
-                    class="bg-gray-200 hover:bg-gray-400 rounded mr-3 px-5 py-3"
-                >&RightArrow;</a>
+                <a class="{{ $pageLinkClasses }}" href="{{ $next }}" rel="next" aria-label="Next page">→</a>
             @endif
         </nav>
     @endif

@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="color-scheme" content="light dark">
         <meta name="description" content="{{ $page->description ?? $page->siteDescription }}">
 
         <meta property="og:title" content="{{ $page->title ? $page->title . ' | ' : '' }}{{ $page->siteName }}"/>
@@ -24,45 +24,50 @@
         <script defer type="module" src="{{ vite('source/_assets/js/prism.js') }}"></script>
     </head>
 
-    <body class="flex flex-col justify-between min-h-screen font-sans leading-normal text-gray-800 bg-gray-100 dark:text-gray-100 dark:bg-gray-900">
-        <header class="flex items-center h-24 py-4 bg-white border-b shadow" role="banner">
-            <div class="container flex items-center px-4 mx-auto max-w-8xl lg:px-8">
-                <div class="flex items-center">
-                    <a href="/" title="{{ $page->siteName }} home" class="inline-flex items-center">
-                        <img class="h-8 mr-3 md:h-10" src="/assets/img/matt-logo.svg" alt="{{ $page->siteName }} logo" />
+    <body class="flex min-h-screen flex-col bg-paper font-sans leading-[1.6] text-ink scheme-light-dark">
+        <a class="fixed top-3 left-3 z-10 -translate-y-[200%] rounded-md bg-surface px-4 py-2.5 text-accent focus:translate-y-0" href="#main-content">Skip to content</a>
 
-                        <h1 class="my-0 text-lg font-semibold text-blue-800 md:text-2xl hover:text-blue-600">{{ $page->siteName }}</h1>
-                    </a>
-                </div>
+        <header
+            class="relative z-2 border-b border-line"
+            x-data="{ menuOpen: false }"
+            @click.outside="menuOpen = false"
+            @keydown.escape="if (menuOpen) { menuOpen = false; $refs.menuToggle.focus() }"
+        >
+            <div class="relative mx-auto flex min-h-17 w-[calc(100%_-_2*var(--spacing-page))] max-w-site
+                       items-center gap-2.5 nav:min-h-19 nav:gap-6 lg:gap-10">
+                <a href="/" class="mr-auto inline-flex items-center gap-2.5 text-xl font-bold tracking-tight">
+                    <span class="grid size-10 place-items-center rounded-xl bg-masthead">
+                        <img class="size-7 invert" src="/assets/img/matt-logo.svg" alt="" width="28" height="28">
+                    </span>
+                    {{ $page->siteName }}
+                </a>
 
-                <div id="vue-search" class="flex items-center justify-end flex-1">
-                    @include('_components.search')
-
-                    @include('_nav.menu')
-
-                    @include('_nav.menu-toggle')
-                </div>
+                @include('_nav.menu-toggle')
+                @include('_nav.menu')
+                @include('_components.search')
             </div>
         </header>
 
-        @include('_nav.menu-responsive')
-
-        <main role="main" class="container flex-auto w-full max-w-4xl px-6 py-16 mx-auto">
+        <main
+            id="main-content"
+            class="mx-auto w-[calc(100%_-_2*var(--spacing-page))] flex-1 pt-[clamp(2rem,4vw,3.75rem)]
+                   pb-[clamp(3.5rem,7vw,6rem)] outline-none @yield('main-class', 'max-w-reading prose')"
+            tabindex="-1"
+        >
             @yield('body')
         </main>
 
-        <footer class="py-4 mt-12 text-sm text-center bg-white" role="contentinfo">
-            <ul class="flex flex-col justify-center list-none md:flex-row">
-                <li class="md:mr-2">
-                    &copy; <a href="https://matt.harrison.us.com/" title="Matt">Matt</a> {{ date('Y') }}.
-                </li>
-
-                <li>
-                    Built with <a href="https://jigsaw.tighten.com/" title="Jigsaw by Tighten">Jigsaw</a>
-                    and <a href="https://tailwindcss.com" title="Tailwind CSS, a utility-first CSS framework">Tailwind CSS</a>.
-                </li>
-            </ul>
+        <footer class="border-t border-line text-sm text-muted">
+            <div class="mx-auto flex w-[calc(100%_-_2*var(--spacing-page))] max-w-site flex-wrap
+                        justify-between gap-x-8 gap-y-1 py-5">
+                <p>&copy; {{ date('Y') }} {{ $page->siteAuthor }}</p>
+                <p>
+                    Built with <a class="underline underline-offset-2 hover:text-accent" href="https://jigsaw.tighten.com/">Jigsaw</a>
+                    and <a class="underline underline-offset-2 hover:text-accent" href="https://tailwindcss.com">Tailwind CSS</a>.
+                </p>
+            </div>
         </footer>
+
         @stack('scripts')
     </body>
 </html>

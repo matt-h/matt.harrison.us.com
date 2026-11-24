@@ -1,17 +1,14 @@
 @extends('_layouts.main')
 
-@section('body')
-    <h1>{{ $page->title }}</h1>
+@section('main-class', 'max-w-reading')
 
-    <div class="text-2xl border-b border-blue-200 mb-6 pb-10">
+@section('body')
+    <header class="prose border-b border-line pb-6">
+        <h1>{{ $page->title }}</h1>
         @yield('content')
-    </div>
+    </header>
 
     @foreach ($page->posts($posts) as $post)
         @include('_components.post-preview-inline')
-
-        @if (! $loop->last)
-            <hr class="w-full border-b mt-2 mb-6">
-        @endif
     @endforeach
 @stop

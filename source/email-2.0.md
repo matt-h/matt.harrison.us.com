@@ -8,8 +8,7 @@ description: Improvements to the email spec to make more reliable and secure.
 
 Hashing out my idea for email 2.0 - This should be written into a proper document
 
-Example of sending mail
-================
+## Example of sending mail
 
   * example.org mail server
     * Stores public key for bob@example.org
@@ -30,13 +29,11 @@ bob@example.org wants to send an email to alice@example.com
   * email is accepted if the signiture matches, and rejected if it does not
 
 
-Details
-================
+## Details
 Encryption is optional, since the part that matters the most in this is the signing to authenticate the email. Since you already have the method of retrieving public keys from mail servers and and all users must have private keys to sign the messages, it is easy enough just to encrypt the message as well.
 
 
-Pros
-=============
+## Pros
 Spoofed mail is history.
 
   * All email that is sent must be signed with the users private key or it is not delivered.
@@ -51,8 +48,7 @@ No more IP blacklisting
   * All mail can only be sent by being signed by a private key that can be verified as coming from that domain
   * Either the email address or domain can be blocked for spam instead
 
-Cons
-=============
+## Cons
 
 Not backwards compatable
 
@@ -62,7 +58,6 @@ Not backwards compatable
       * If it does not, the client should fallback to old methods.
     * Servers with Email 2.0 can optionally choose to support mail coming from current methods and treat it as it currently does.
 
-Encryption
-================
+## Encryption
 
 All encryption and signing is done with asymmetric keypairs. A standard will need to be decidied on of what method to use.

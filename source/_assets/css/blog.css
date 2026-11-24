@@ -1,1 +1,62 @@
-/* Your custom blog styles here */
+/* Jigsaw renders Markdown elements without template utility classes. */
+.prose {
+    @apply wrap-break-word text-[clamp(1rem,0.96rem+0.3vw,1.125rem)] leading-[1.78];
+}
+
+.prose > :where(* + *) {
+    @apply mt-[1.15em];
+}
+
+.prose :where(h2, h3, h4, h5, h6):not(:first-child) {
+    @apply mt-[1.55em];
+}
+
+.prose :where(ul, ol) {
+    @apply ps-[1.4em];
+}
+
+.prose ul {
+    @apply list-disc;
+}
+
+.prose ol {
+    @apply list-decimal;
+}
+
+.prose li + li {
+    @apply mt-[0.3em];
+}
+
+.prose li > :where(ul, ol) {
+    @apply mt-[0.35em];
+}
+
+.prose a {
+    @apply text-accent underline decoration-1 underline-offset-[0.18em] hover:decoration-2;
+}
+
+.prose blockquote {
+    @apply border-s-3 border-accent ps-4 text-muted italic;
+}
+
+.prose hr {
+    @apply border-0 border-t border-line;
+}
+
+.prose pre,
+.prose table {
+    @apply block max-w-full overflow-x-auto;
+}
+
+.prose pre {
+    @apply wrap-normal rounded-lg border border-line bg-surface p-4 text-sm leading-relaxed;
+}
+
+.prose th,
+.prose td {
+    @apply border border-line px-2.5 py-1.5 text-start;
+}
+
+.prose :not(pre) > code {
+    @apply rounded bg-surface-accent px-[0.35em] py-[0.12em] text-[0.9em];
+}

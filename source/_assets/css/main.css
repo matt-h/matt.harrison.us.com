@@ -1,35 +1,25 @@
 @import "tailwindcss";
-
-@import "./base.css" layer(components);
+@import "./base.css" layer(base);
 @import "./blog.css" layer(components);
 
-@layer base {
-    :root {
-        --font-sans:
-            "Nunito Sans", ui-sans-serif, system-ui, -apple-system,
-            BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
-            "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-            "Segoe UI Symbol", "Noto Color Emoji";
-
-        --shadow-search:
-            0 -1px 27px 0 rgba(0, 0, 0, 0.04), 0 4px 15px 0 rgba(0, 0, 0, 0.08);
-    }
-
-    *,
-    ::after,
-    ::before,
-    ::backdrop,
-    ::file-selector-button {
-        border-color: var(--color-gray-200, currentcolor);
-    }
-
-    body {
-        font-family: var(--font-sans);
-    }
+@theme {
+    --breakpoint-nav: 42rem;
+    --container-site: 70rem;
+    --container-reading: 46rem;
+    --spacing-page: clamp(1rem, 4vw, 2.75rem);
+    --font-serif: Georgia, "Times New Roman", serif;
+    --color-masthead: #192832;
+    --color-masthead-ink: #fff8e9;
+    --color-masthead-muted: #ddd8ce;
+    --color-masthead-accent: #f5a480;
 }
 
-@layer utilities {
-    .shadow-search {
-        box-shadow: var(--shadow-search);
-    }
+@theme inline {
+    --color-paper: var(--site-paper);
+    --color-surface: var(--site-surface);
+    --color-surface-accent: var(--site-surface-accent);
+    --color-ink: var(--site-ink);
+    --color-muted: var(--site-muted);
+    --color-line: var(--site-line);
+    --color-accent: var(--site-accent);
 }

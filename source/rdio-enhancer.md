@@ -321,8 +321,7 @@ v 1.3
 	* Move song to top of the playlist
 
 
-Thanks
-================
+## Thanks
 
 Nicolas [@cotenoni](https://twitter.com/cotenoni) [GitHub](https://github.com/cotenoni)
 
