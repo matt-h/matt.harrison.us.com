@@ -1,5 +1,5 @@
 [build]
-command = "npm run prod"
+command = "bash build.sh"
 publish = "build_production"
 
 [[redirects]]
