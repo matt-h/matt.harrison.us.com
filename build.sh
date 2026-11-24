@@ -8,6 +8,6 @@ fi
 
 
 composer install
-npm install
+npm ci
 npm run prod
 ./vendor/bin/jigsaw build $BUILD_ENVIRONMENT
